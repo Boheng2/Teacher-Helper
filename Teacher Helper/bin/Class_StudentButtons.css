@@ -1,0 +1,21 @@
+.button{
+    -fx-text-fill: #1976D2;
+    -fx-background-color: WHITE;
+    -fx-border-color: #1976D2;
+    -fx-border-width: 5px;
+    -fx-border-style: none none none none ;
+
+}
+
+.button:hover{
+
+    -fx-background-color: #1976D2;
+    -fx-text-fill: WHITE;
+
+}
+
+.button:pressed{
+
+    -fx-background-color:-fx-primarytext;
+    -fx-text-fill: -fx-#1976D2;
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- Responsible for the remove expectations pop up -->
+<!-- Controller Class: RemoveExpectationController -->
+<!-- fx:ids same as variable names that called fxml in the controller class -->
+
+<VBox prefHeight="240.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RemoveExpectationsController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="240.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+         <children>
+            <GridPane fx:id="removeExpectationGrid" layoutX="250.0" layoutY="76.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <Label layoutX="246.0" layoutY="34.0" text="Remove Expectation" />
+            <Button layoutX="32.0" layoutY="96.0" mnemonicParsing="false" onAction="#addExpectationOnList" text="Add" />
+            <Button layoutX="519.0" layoutY="96.0" mnemonicParsing="false" onAction="#confirm" text="Confirm" />
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
